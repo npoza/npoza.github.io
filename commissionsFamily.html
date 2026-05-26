@@ -9,7 +9,8 @@
 	<meta name="keywords" content="creativiy, respect and love for all life, animal innocence, help underserved, art commission, art private collection, portraits" />
 	<meta name="author" content="Oza" />
 
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="icon" href="images/favicon.jpg">
+
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 
@@ -36,9 +37,16 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<!-- For the slide show only -->
+	<link rel="stylesheet" href="css/slideShow.css">
+
+	<!-- Just for responsive art images  -->
+	<link rel="stylesheet" href="css/artResponsive.css">
+
+	<script src="js/slideShow.js"></script>
+
 	</head>
 	<body>
-
 	<div class="fh5co-loader"></div>
 
 	<div id="page">
@@ -50,7 +58,7 @@
 						<div class="row">
 							<div class="col-sm-7 text-left menu-1">
 								<ul>
-									<li class="active"><a href="home.html">Home</a></li>
+									<li><a href="home.html">Home</a></li>
 									<li><a href="originals.html">Originals</a></li>
 
 									<li class="has-dropdown">
@@ -66,6 +74,7 @@
 									<li><a href="contact.html">Contact Us</a></li>
 								</ul>
 							</div>
+
 						</div><!-- end class="row" -->
 					</div><!-- class="container" -->
 				</div><!-- class="top-menu" -->
@@ -94,40 +103,99 @@
 					<h2><span>Priceless Memories</span></h2>
 				</div>
 			</div>
+
+			<!-- Photo Grid -->
 			<div class="row">
-
-				<div class="col-md-2">
-				</div>
-
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-
-						<div class="title text-center">
-							<span class="category">Pet Portraits</span>
-						</div>
-
-						<a href="commissionsPets.html"><img class="img-responsive" src="images/commissions/rico.jpg" alt="Best Friends"></a>
-						<div class="blog-text text-center">
-							<p>Our best friends</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<div class="title text-center">
-							<span class="category">Family Portraits</span>
-						</div>
-						<a href="commissionsFamily.html"><img class="img-responsive" src="images/commissions/babyNeil.jpg" alt="Commissioned baby"></a>
-						<div class="blog-text text-center">
-							<p>Celebrating memories</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-2">
-				</div>
-
+			  <div class="column">
+ 				 <img src="images/commissions/babyNeil.jpg" style="width:100%" onclick="openModal();currentSlide(1);" class="hover-shadow cursor">
+			    <img src="images/commissions/rafi.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+			  	</div>
+			  <div class="column">
+	   		  	<img src="images/commissions/emmaJia.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+	   		    <img src="images/commissions/rajebhai.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+			  </div>
+			  <div class="column">
+				<img src="images/commissions/kim.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+			  </div>
+			  <div class="column">
+ 			  	 <img src="images/commissions/gabrielle.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+			  	 <img src="images/commissions/ninno.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+			 </div>
 			</div>
+		</div>
+	</div>
+
+	<div id="myModal" class="modal">
+	  <span class="close cursor" onclick="closeModal()">&times; Close</span>
+	  <div class="modal-content">
+
+
+	    <div class="mySlides">
+	    	<div class="numbertext">1 / 7
+	     	 	<div>My Baby Brother
+	     	 	</div>
+	     	 	<div>Graphite</div>
+	     	 </div>
+	     	 <img id="image1" src="images/commissions/babyNeil.jpg" style="width:100%">
+	    </div>
+
+ 		<div class="mySlides">
+	    	<div class="numbertext">2 / 7
+	      		<div>Young love</div>
+	      		<div>Oil</div>
+	      	</div>
+	      	<img id="image2" src="images/commissions/rafi.jpg" style="width:100%">
+	    </div>
+
+	    <div class="mySlides">
+		      <div class="numbertext">3 / 7
+		    	<div>Sisters forever</div>
+		      	<div>Pencil</div>
+		      </div>
+		      <img id="image3" src="images/commissions/emmaJia.jpg" style="width:100%">
+	    </div>
+
+ 		<div class="mySlides">
+		      <div class="numbertext">4 / 7
+		    	<div>Family Portrait</div>
+		      	<div>Oil</div>
+		      </div>
+		      <img id="image4" src="images/commissions/rajebhai.jpg" style="width:100%">
+	    </div>
+
+ 	    <div class="mySlides">
+		      <div class="numbertext">5 / 7
+		    	<div>Family Portrait</div>
+		      	<div>Oil</div>
+		      </div>
+		      <img id="image5" src="images/commissions/kim.jpg" style="width:100%">
+	    </div>
+
+
+	    <div class="mySlides">
+		      <div class="numbertext">6 / 7
+		    	<div>My father in heaven</div>
+		      	<div>Oil</div>
+		      </div>
+		      <img id="image6" src="images/commissions/gabrielle.jpg" style="width:100%">
+	    </div>
+
+	    <div class="mySlides">
+		      <div class="numbertext">7 / 7
+		    	<div>Hermano</div>
+		      	<div>Pencil</div>
+		      </div>
+		      <img id="image7" src="images/commissions/ninno.jpg" style="width:100%">
+	    </div>
+
+	    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	    <a class="magnifyLens" onclick="magnify(2)">&#9906;</a>
+
+	    <div class="caption-container">
+	      <p id="caption"></p>
+	    </div>
+
 		</div>
 	</div>
 
@@ -143,7 +211,7 @@
 
 		</div>
 	</footer>
-	</div>
+	</div> <!-- end of div id="page"-->
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
